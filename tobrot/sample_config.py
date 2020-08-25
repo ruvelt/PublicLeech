@@ -18,10 +18,10 @@ class Config(object):
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "./DOWNLOADS")
     # Telegram maximum file upload size
-    MAX_FILE_SIZE = int(get_config("MAX_FILE_SIZE", 50000000))
+    MAX_FILE_SIZE = int(get_config("MAX_FILE_SIZE", 1000000000000))
     TG_MAX_FILE_SIZE = int(get_config("TG_MAX_FILE_SIZE", 2000000000))
     FREE_USER_MAX_FILE_SIZE = int(
-        get_config("FREE_USER_MAX_FILE_SIZE", 50000000)
+        get_config("FREE_USER_MAX_FILE_SIZE", 1000000000000)
     )
     # chunk size that should be used with requests
     CHUNK_SIZE = int(get_config("CHUNK_SIZE", 128))
