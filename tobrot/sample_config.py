@@ -19,7 +19,7 @@ class Config(object):
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "./DOWNLOADS")
     # Telegram maximum file upload size
     MAX_FILE_SIZE = int(get_config("MAX_FILE_SIZE", 50000000))
-    TG_MAX_FILE_SIZE = int(get_config("TG_MAX_FILE_SIZE", 2097152000))
+    TG_MAX_FILE_SIZE = int(get_config("TG_MAX_FILE_SIZE", 2000000000))
     FREE_USER_MAX_FILE_SIZE = int(
         get_config("FREE_USER_MAX_FILE_SIZE", 50000000)
     )
@@ -38,7 +38,7 @@ class Config(object):
     # set timeout for subprocess
     PROCESS_MAX_TIMEOUT = int(get_config(
         "PROCESS_MAX_TIMEOUT",
-        3600
+        3600000
     ))
     #
     ARIA_TWO_STARTED_PORT = int(get_config(
@@ -47,15 +47,15 @@ class Config(object):
     ))
     EDIT_SLEEP_TIME_OUT = int(get_config(
         "EDIT_SLEEP_TIME_OUT",
-        1
+        30
     ))
     MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START = int(get_config(
         "MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START",
-        600
+        3600
     ))
     MAX_TG_SPLIT_FILE_SIZE = int(get_config(
         "MAX_TG_SPLIT_FILE_SIZE",
-        1900000000
+        1700000000
     ))
     # add config vars for the display progress
     FINISHED_PROGRESS_STR = get_config("FINISHED_PROGRESS_STR", "█")
